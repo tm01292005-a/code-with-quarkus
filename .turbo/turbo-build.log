@@ -1,0 +1,21 @@
+
+> web@0.1.0 build
+> next build
+
+   ▲ Next.js 15.3.1
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 3.0s
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./app/components/DateRangeApiExample.tsx
+11:10  Error: '_key' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+npm ERR! Lifecycle script `build` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: web@0.1.0 
+npm ERR!   at location: C:\quarkus\code-with-quarkus\apps\web 

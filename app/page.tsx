@@ -16,6 +16,7 @@ import Toast from "./components/Toast";
 import SortSelect from "./components/SortSelect";
 import DateRangeApiExample from "./components/DateRangeApiExample";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { SampleButton } from "@code-with-quarkus/ui";
 
 export default function Home() {
   const [fruits, setFruits] = useState<Fruit[]>([]);
@@ -217,6 +218,9 @@ export default function Home() {
           {/* Date Range Picker & API Example */}
           <div className="mb-8">
             <DateRangeApiExample />
+            <div className="mt-4">
+              <SampleButton>共通UIサンプルボタン</SampleButton>
+            </div>
           </div>
           <div className="flex justify-between items-center mb-8">
             <div>

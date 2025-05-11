@@ -6,7 +6,12 @@ import { useQuery } from "@tanstack/react-query";
 // 環境変数からBaseURLを取得
 const BASE_URL = process.env.NEXT_PUBLIC_API_GATEWAY_BASE_URL;
 
-const fetchData = async ({ queryKey }) => {
+// 型定義を追加
+const fetchData = async ({
+  queryKey,
+}: {
+  queryKey: [string, { from: Date | undefined; to: Date | undefined }];
+}) => {
   const [_key, { from, to }] = queryKey;
   if (!from || !to) return null;
 
